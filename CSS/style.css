@@ -1,0 +1,821 @@
+@font-face {
+	font-family:'SF Pro Text';
+	font-style:normal;
+	font-weight:400;
+	src: url(../Fonts/sf-pro-text_regular.woff2);
+}
+
+@font-face {
+	font-family:'SF Pro Display semibold';
+	font-style:normal;
+	font-weight:600;
+	src: url(../Fonts/sf-pro-display_semibold.woff2);
+}
+
+@font-face
+{
+        font-family:'SF Pro Display regular';
+        font-style:normal;
+        font-weight:400;
+        src: url(../Fonts/sf-pro-display_regular.woff2);
+}
+
+@font-face {
+    font-family: 'SF Pro Display heavy';
+    font-style: normal;
+    src: url(../Fonts/sf-pro-display_heavy.woff2);
+}
+body
+{
+    height: 100vh;
+    margin:0%;
+}
+
+/* header styles */
+.container
+{
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+    z-index: 50;
+    background:rgba(0, 0, 0, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);  
+     
+}
+.header
+{
+    height: 44px;
+    max-width: 980px;
+    display: flex;
+    align-items: center;  
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+    margin: auto;
+    
+}
+.header  a
+{
+    display: flex;
+    align-items: center;
+    color: #F5F5F7;
+    font-size: 14px;
+    line-height: 3.14286;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: 'regular';
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    height: 44px;
+    padding: 0 10px;
+    text-decoration: none;
+    outline-offset: 193px;
+    font-family: 'SF Pro Text';
+    transition: opacity 0.3s;  
+}
+
+.header a, .header .Zbin , .header .bag
+{
+    opacity: .8;
+}
+
+
+.header .Zbin 
+{
+    background: url(../IMG/Searchimagedouble.svg);
+    background-repeat: no-repeat;
+    background-size: 18px 88px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 18px;
+    
+
+}
+.header .bag
+{
+    background: url(../IMG/bag.svg);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 44px;
+    background-position: center center;
+}
+
+.blue a
+{
+    color: #06c;
+    text-decoration: none;
+    font-family: 'SF Pro Text';
+   
+}
+.ribbon
+{
+    margin-top: 44px;
+    display: flex;
+    background-color: #f5f5f7;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    margin-bottom: 0px;
+    font-size: 14px;
+    padding: 12px 0;
+    font-family: 'SF Pro Text';
+}
+.ribbon a:hover
+{
+    text-decoration: underline;
+}
+
+.header a:hover
+{
+    opacity: 1;
+} 
+
+
+/* end of header styles */
+.gridone
+{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-row-gap: 12px;
+  
+}
+.imageone
+{
+    position: relative;
+    overflow: hidden;
+    margin-top: 0%;
+    padding-top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 580px;
+    background-repeat: no-repeat;
+    background-image: url(../IMG/624.jpg);
+    background-size: 3010px 624px;
+    background-position: bottom center;
+    
+}
+
+.headline
+{
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    font-size: 56px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -.002em;
+    font-family: 'SF Pro Display semibold';
+    margin-top: 47px;
+    margin-bottom: 5px;
+}
+.imageone .headline 
+{
+    color:rgb(29, 29, 31);
+}
+.imageone .subhead
+{
+    color:rgb(29, 29, 31);
+}
+.imagetwo .headline
+{
+    color: rgb(245, 245, 247);
+    text-decoration: none;
+
+}
+.imagetwo .subhead
+{
+    color: rgb(245, 245, 247);
+}
+
+.subhead
+{
+    margin: 0%;
+    font-size: 28px;
+    line-height: 1.16667;
+    font-weight: 400;
+    letter-spacing: .009em;
+    font-family: 'SF Pro Display regular';
+    color:rgb(29, 29, 31);
+}
+
+.regular1, .regular2
+{
+    color: #86868b;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+}
+
+.note a
+{
+    color: #86868b;
+    font-size: 10px;
+    text-decoration: none;
+
+}
+.regular1
+{
+    margin-top: 11px;
+    margin-bottom: 0px;
+}
+.regular2
+{
+    margin-top: 0px;
+    margin-bottom: 13.6px;
+}
+
+
+.bL a
+{
+    color: #06c;
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: .012em;
+    font-family: 'SF Pro Display regular';
+    font-size: 21px;
+
+
+}
+
+.buy
+{   margin-right: 17px;
+    margin-left: 17px;
+}
+
+.learnmore
+{
+    margin-right: 20px;
+    margin-left: 17px;
+}
+
+/* arrowright */
+i
+{
+  border:  solid #06c 2px;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-bottom: 2px;
+
+}
+
+/* ------------- */
+
+.imagetwo
+{
+    background-image: url(../IMG/iphone_12_pro_us__e5oyysg4k0ya_large.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 580px;
+    margin-top: 0%;
+    padding-top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ------------------ */
+.imagethree
+{
+    background-image: url(../IMG/12.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 580px;
+    margin-top: 0%;
+    padding-top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagethree .headline , .subhead
+{
+    color:rgb(245, 245, 247);
+}
+.imagethree .subhead
+{
+    margin-bottom: 12px;
+}
+
+/* -------------------------- */
+
+.gridtwo
+{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-row-gap: 12px;
+    grid-column-gap: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+
+}
+
+.box1
+{
+    
+    background-image: url(../IMG/promo_imac.jpg);
+    background-position: center;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box1 .subhead
+{
+    color: rgb(29, 29, 31);
+}
+
+.headlinex
+{
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    font-size: 48px;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -.002em;
+    font-family: 'SF Pro Display semibold';
+    margin-top :42px;
+    margin-bottom: 5px;
+}
+.subheadx
+{
+    margin: 0%;
+    font-size: 28px;
+    font-family: 'SF Pro Display regular';
+    color:rgb(29, 29, 31);
+    margin-bottom: 14px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+    margin-top: 6px;
+}
+.bLx a
+{
+    text-decoration: none;
+    font-size: 19px;
+    line-height: 1.21053;
+    font-weight: 400;
+    letter-spacing: .012em;
+    color:  #06c;
+    font-family: "SF Pro Display regular";
+    
+}
+
+.box2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../IMG/watch.jpg);
+    background-position: center;
+}
+.box2 img
+{   
+    margin-top: 40px;
+}
+
+.box2 .subheadx
+{
+    color: rgb(245, 245, 247);
+}
+/* 
+-------------- */
+.box3
+{
+    background-image: url(../IMG/hello.jpg);
+    background-position: center;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.box3 h4
+{
+    padding-bottom: 0px;
+    text-align: center;
+    margin-bottom: 7px;
+    margin-top: 42px;
+    margin-right: 150px;
+    margin-left: 150px;
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: .002em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color:rgb(29, 29, 31);
+}
+
+.b a
+{
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+    line-height: 1.21053;
+    font-weight: 400;
+    letter-spacing: .012em;
+    color: #06c;
+    font-family: "SF Pro Display regular";
+    text-decoration: none;
+    
+}
+.bLx sup
+{
+    font-size:10px;
+}
+
+.notex a 
+{   font-family:'SF Pro Display semibold';
+    font-size: 15px;
+    color:rgb(29, 29, 31);
+    text-decoration: none;
+}
+
+/* ----------------------------- */
+.box4
+{
+    background-image: url(../IMG/game.jpg);
+    background-position: center bottom;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box4 img
+{
+    margin-top: 42px;
+}
+/* ---------------------------------------- */
+.box5
+{
+    background-image: url(../IMG/Simcard.jpg);
+    background-position: center bottom;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.box5 .subheadx
+{
+    margin-right: 160px;
+    margin-left: 160px;
+}
+
+
+.box5 img  
+{
+    margin-top: 42px;
+}
+
+.box6 img
+{
+    margin-top: 55PX;
+    padding-left: 20PX;
+}
+.box6
+{
+    background-image: url(../IMG/backpack.jpg);
+    background-position: center top;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.triangle
+{       
+    width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-left: 6px solid white;
+	border-bottom: 4px solid transparent;
+    margin-left: 1px;
+}
+
+.bluecircle
+{
+    background-color: rgb(0, 102, 204);  
+    border-radius: 100px;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6px;
+    margin-top:3px;
+}
+.watchnow
+{   
+    display: flex;
+    margin-top: 448PX;   
+}
+
+/* -------------------------------------footer */
+.gridthree
+{
+    /* display: grid; */
+    background-color: #f5f5f7;
+}
+
+.footercontainer
+{
+    margin-right: 165px;
+    margin-left: 165px;
+    padding-bottom: 15px;
+}
+
+.ftable li, .lastline li , .ffnote li , .littlef p
+{
+    list-style: none;
+    text-decoration: none;
+    font-size: 12px;
+    font-family:'SF pro text';
+    color: rgb(134, 134, 139);
+    line-height: 16.0004px;
+}
+
+.ftable h3
+{
+    font-weight: 600;
+    font-size: 12px;
+    color: rgb(29, 29, 31);
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.33337;
+    letter-spacing: -.01em;
+    margin-bottom: .8em;
+
+
+}
+.ftable a
+{
+    text-decoration: none;
+    color: #86868b;
+}
+
+.ffnote a
+{
+    text-decoration: none;
+    color: #86868b;
+}
+
+.ftable
+{
+    display: flex;
+    font-family: 'regular';
+    color: #86868b;
+    letter-spacing: normal;
+    font-size: 1em;   
+}
+
+.ffnote ul , .ftable ul
+{
+    padding-left: 0px;
+}
+.ulone, .ultwo, .ulthree, .ulfour, .ulfive
+{
+    width: 20%;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+}
+.ulone li , .ultwo li, .ulthree li, .ulfour li, .ulfive li
+{
+    margin-bottom: 7px;
+}
+
+.ffnote
+{
+    border-bottom: 1px solid #d2d2d7;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: normal;
+    font-family:'regular';
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+
+.littlef
+{
+    margin-bottom: 5px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #d2d2d7;
+    display: flex;
+}
+.littlef a
+{
+    color: #2997ff;
+    text-decoration: none;
+}
+
+.littlef a:hover , .ffnote a:hover , .ftable a:hover , .lastline a:hover
+{
+    text-decoration: underline;
+}
+
+.lastline ul
+{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-top: 5px;
+    padding-top: 0px;
+}
+
+
+
+.lastline
+{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: 'SF Pro Text';
+    margin-top: 0px;
+    padding-top: 0px;
+ 
+}
+
+.lastline  a
+{
+    color: #515154;
+    font-size: 1em;
+    text-decoration: none;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.lastline .copyright
+{
+    padding-right: 20px;
+}
+
+.lastline .bordered
+{
+    border-right: 1px solid #d2d2d7;
+    margin-right: 10px;
+    padding-right: 7px;
+
+}
+.right
+{
+    display: flex;
+    font-size: 1em;
+
+}
+
+.needtopmargin
+{
+    margin-top:25px;
+    
+}
+
+
+
+@media only screen and (min-height: 800px) and (max-height:899px)
+{
+    .imageone , .imagetwo, .imagethree
+ {
+    height: 689px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 3010px 736px;
+
+ }
+ .imageone{background-image: url(../IMG/736.jpg);}
+ .imagetwo{background-image: url(../IMG/iphone_12_pro737.jpg);}
+
+ 
+
+}
+
+@media only screen and (min-height: 721px) and (max-height:799px)
+{
+    .imageone , .imagetwo, .imagethree
+ {
+    height: 580px;
+    background-size: 3010px 624px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+ }
+
+ .footercontainer {width: 980px; margin: auto; }
+} 
+@media only screen and (min-height: 900px) and (max-height:950px)
+
+{
+    .imageone , .imagetwo, .imagethree
+    {
+       height: 689px;
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: bottom center;
+       background-size: 3010px 736px;
+   
+    }
+    .imageone{background-image: url(../IMG/736.jpg);}
+    .imagetwo{background-image: url(../IMG/iphone_12_pro737.jpg);}
+   
+} 
+
+@media only screen and (min-height: 1800px) and (max-height:1920px)
+
+{
+    .imageone , .imagetwo, .imagethree
+    {
+       height: 689px;
+       background-size: cover;
+       background-position: bottom center;
+       background-size: 3010px 736px;
+       background-repeat: no-repeat;
+       width: 2560px;
+       margin: auto;
+    }
+
+    .box1,.box2, .box3, .box4, .box5, .box6
+    {
+        height: 580px;
+        background-size: 1262px 580px;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+    
+    .gridtwo
+    {
+        width: 2524px;
+        margin: auto;
+    }
+    .ribbon
+    {
+        width: 2560px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .footercontainer
+    {
+        width: 980px;
+        margin: auto;
+    }
+
+    .imageone{background-image: url(../IMG/736.jpg);}
+    .imagetwo{background-image: url(../IMG/iphone_12_pro737.jpg);}
+} 
+
+
+@media only screen and (min-height: 1050px) and (max-height:1799px)
+{
+    .imageone{background-image: url(../IMG/736.jpg);}
+    .imagetwo{background-image: url(../IMG/iphone_12_pro737.jpg);}
+   
+    .imageone, .imagetwo, .imagethree
+    {
+        
+       height: 689px;
+       background-repeat: no-repeat;
+       background-position: bottom center;
+       background-size: 3010px 736px;
+    }
+    .footercontainer
+    {
+        width: 980px;
+        margin: auto;
+    }
+}
+
+
+
+
+
